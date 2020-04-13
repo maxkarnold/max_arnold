@@ -6,6 +6,7 @@ html {
 
 body{
 	width: 100%;
+	margin:0;
 	line-height:normal;
 	font-family:'Roboto',Georgia,Helvetica sans-serif;
 	background-color:#b3e0ff;
