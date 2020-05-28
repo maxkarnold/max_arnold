@@ -74,13 +74,20 @@ nav ul li {
 	padding: 10px 20px;
 	text-align: center;
 }
-
+section{
+	border-bottom: 40px #254C5C solid;
+}
 h2 {
 	text-align: center;
 	background-color: #254C5C;
   	font-family: 'Roboto Slab',Georgia,Helvetica serif;
 	color: white;
 	padding: 10px 0;
+}
+
+figcaption{
+	text-align: center;
+	font-size: 2.5rem;
 }
 .content img {
 	display: none;
@@ -203,8 +210,16 @@ p {
 	.graf4 {
 		grid-area: g;
 	}
-
-
+	figure{
+		display:flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	figcaption{
+		display: inline;
+		font-size: 2.5rem;
+	}
+	
 }
 @media screen and (min-width: 800px){
 
