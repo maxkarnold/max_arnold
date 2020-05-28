@@ -76,18 +76,23 @@ nav ul li {
 }
 section{
 	border-bottom: 40px #254C5C solid;
+	line-height: 2.5rem;
+}
+section ul{
+	list-style: inside;
+	text-align: center;
 }
 h2 {
 	text-align: center;
 	background-color: #254C5C;
   	font-family: 'Roboto Slab',Georgia,Helvetica serif;
 	color: white;
-	padding: 10px 0;
+	padding: 1.5rem 0;
 }
 
 figcaption{
 	text-align: center;
-	font-size: 2.5rem;
+	font-size: 2rem;
 }
 .content img {
 	display: none;
@@ -156,7 +161,10 @@ p {
 	}
 
 	h2 {
-		font-size: 6vw;
+		font-size: 3rem;
+	}
+	.main_img{
+		margin: 3rem 2rem;
 	}
 	.content {
 		justify-content: center;
@@ -214,10 +222,11 @@ p {
 		display:flex;
 		flex-direction: row;
 		align-items: center;
+		justify-content: center;
 	}
 	figcaption{
-		display: inline;
 		font-size: 2.5rem;
+		line-height: 3rem;
 	}
 	
 }
