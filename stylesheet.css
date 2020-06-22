@@ -113,6 +113,11 @@ p {
 .roadmap_page .list_headers{
 	font-size: 1.5rem;
 }
+
+.roadmap_page ul {
+	text-align: left;
+}
+
 .roadmap_page li{
 	color: black;
 	font-weight: bold;
