@@ -1,13 +1,18 @@
+/* Alternate Box Model */
 
 html {
-	font-size: 100%
+	font-size: 100%;
+	box-sizing: border-box;
 }
 
+*, *::before, *::after {
+	box-sizing: inherit;
+}
 
 body{
 	width: 100%;
-	margin:0;
-	line-height:normal;
+	margin: 0;
+	line-height: normal;
 	font-family:'Roboto',Georgia,Helvetica sans-serif;
 	background-color:#b3e0ff;
 	color:#254C5C;

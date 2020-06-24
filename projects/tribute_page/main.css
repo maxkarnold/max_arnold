@@ -1,0 +1,51 @@
+body{
+    font-size:100%;
+    margin:0;
+    padding:0;
+    background: lightskyblue;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+#title{
+    margin: 30px;
+    background: gold;
+    width: 40%;
+    text-align: center;
+}
+
+.p_link{ 
+    width:100%;
+    text-align: center;
+}
+#tribute-link{
+    background: #b8860b;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+#tribute-link:hover{
+    color: black;
+    background: white;
+    font-weight: bold;
+}
+#img-div{
+    text-align: center;
+    vertical-align: middle;
+    margin: 30px;
+    padding: 20px 0 10px 0;
+}
+#image{
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 50%;
+    max-width:100%;
+}
+
+#tribute-info{
+    margin: 0 20% 0 20%;
+}
