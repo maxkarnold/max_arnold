@@ -1,0 +1,81 @@
+/* || General Styles */
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    width: 100%;
+    font: 100% -apple-system, BlinkMacSystemFont, "Roboto", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+    color: black;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+/* || SITEWIDE */
+
+/* HEADER */
+
+h1{
+    display: inline;
+}
+
+h1 a{
+    background: 82px 20px url(https://a.espncdn.com/redesign/assets/img/logos/logo-espn-82x20@2x.png);
+    color: transparent;
+}
+
+header{
+    width: 100%;
+    min-height: min-content;
+}
+/* NAV */
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: ;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    background: rgb(72, 73, 74);
+    color: white;
+    margin: 0;
+    width: 50%;
+}
+
+nav ul li{
+    padding: 15px 10px 5px 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    font: 14px;
+}
+
+nav ul li a:visited{
+    color: white;
+}
+
+nav ul li > a:hover{
+    color: black;
+}
+
+.right_nav{
+    justify-content: flex-end;
+}
+
+
+
+/* || UTILITIES */
+
+
