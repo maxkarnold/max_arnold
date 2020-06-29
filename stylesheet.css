@@ -24,7 +24,7 @@ img{
 }
 
 .main_img {
-	display:block;
+	display: block;
 	margin: 3rem auto;
 	max-height: 350px;
 	max-width: 75%;
@@ -173,9 +173,7 @@ p {
 	h2 {
 		font-size: 3rem;
 	}
-	.main_img{
-		margin: 3rem 2rem;
-	}
+	
 	.content {
 		justify-content: center;
 		margin: 5vw;
