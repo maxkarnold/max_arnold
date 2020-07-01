@@ -1,3 +1,4 @@
+/* || GENERAL STYLES */
 /* Alternate Box Model */
 
 html {
@@ -12,83 +13,100 @@ html {
 body{
 	width: 100%;
 	margin: 0;
-	line-height: normal;
 	font-family:'Roboto',Georgia,Helvetica sans-serif;
 	background-color:#b3e0ff;
-	color:#254C5C;
+	text-align: center;
 }
 
 img{
-  	border:0;
-	max-width:65%;
+	border:0;
+	max-width: 100%;
 }
 
-.main_img {
+p{
+	line-height: 2rem;
+}
+
+/* || UTILITIES */
+
+/* For lists without bullets */
+
+.main_img{
 	display: block;
-	margin: 3rem auto;
-	max-height: 350px;
-	max-width: 75%;
+	max-width: 100%;
 }
 
-
-nav {
-	display: flex;
-	flex-flow: row;
-	flex-wrap: wrap;
-	background-color: #254C5C;
+.no_list{
+	list-style: none;
 	margin:0;
-	padding: 10px 10px;
+	padding: 0;
 }
-nav a h1 {
-	display: flex;
-	order:2;
-	font-size:35px;
-	font-family: 'Roboto Slab',Georgia,Helvetica serif;
-	color:white;
-	margin:0;
-	margin-left: 12px;
-}
-
-nav a{
-	color: white;
+/* For links without underlines */
+.no_dec{
 	text-decoration: none;
 }
-nav .menu-trigger {
-	order:0;
-	font-size: 35px;
-	width:1em;
-	margin-right: 15px;
+
+/* || SITEWIDE */
+
+/* HEADING AND NAVIGATION */
+
+header{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: stretch;
+	background: #254C5C;
+	margin: 0;
+	padding: 0;
 }
 
-nav ul {
-	display: none;
-	order:3;
-	font-family:'Open Sans',Georgia,Helvetica sans-serif;
-	font-size:20px;
-	line-height:normal;
-	font-weight:400;
-	margin-left: 0;
-	margin-right: 0;
-  	padding: 0;
-	width:100%;
+header a, nav{
+	width: 100%;
 }
 
-nav ul li {
-	display: block;
-	border-bottom: 2px white solid;
+header h1{
+	font-size: 2.5rem;
+	font-family: 'Roboto Slab',Georgia,Helvetica serif;
+	color:white;
+	margin: 0;
+}
+
+nav ul{
+	display: flex;
+	flex-flow: column;
+	list-style-type: none;
+	width: 100%;
+}
+
+nav ul li{
+	display: flex;
+	width: 100%;
+}
+
+nav ul li a{
+	font-size: 1.5rem;
+	color: white;
+	width: 100%;
 	padding: 10px 20px;
-	text-align: center;
+	border-top: 1px solid white;
 }
+
+nav ul li a:hover{
+	background: #346C82;
+}
+
+/* Element Styles */
+
 section{
-	border-bottom: 40px #254C5C solid;
-	line-height: 2.5rem;
+	line-height: 1.5rem;
+	margin: 3rem initial;
 }
+
 section > ul{
 	list-style: inside;
 	margin-left: 25%;
 }
 h2 {
-	text-align: center;
 	background-color: #254C5C;
   	font-family: 'Roboto Slab',Georgia,Helvetica serif;
 	color: white;
@@ -96,23 +114,75 @@ h2 {
 }
 
 figcaption{
-	text-align: center;
 	font-size: 2rem;
 }
+
+.hero {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 2rem;
+}
+
+.hero article.link_box{
+	display: flex;
+	flex-flow: column;
+	background: #FFD2B3;
+	border: 5px inset #939290;
+	border-radius: 20px;
+	padding: 2.5rem 1.5rem;
+	margin: 2rem;
+}
+
+.link_box a{
+	margin-bottom: 1rem;
+	color: blue;
+	text-decoration: none;
+}
+
+.link_box a:hover{
+	color: white;
+	text-decoration: underline;
+}
+
+.link_box a:last-child{
+	margin: 0;
+}
+
+
+.hero > a:last-child{
+	max-width: 90vw;
+	max-width: 600px;
+	min-width: 250px;
+	padding: 2rem 2rem;
+}
+
+/* || PAGE SPECIFIC */
+
+/* INDEX PAGE */
+
 .content img {
-	display: none;
+	display: block;
+	margin: auto;
+	max-height: 50vh;
+	max-width: 75vw;
+	
 }
 
 .content p {
-	margin: 15px 15px;
-}
-p {
-	text-align: center;
+	max-width: 90%;
+	text-align: initial;
+	margin: 1rem auto;
 }
 
+/* ROADMAP PAGE */
+
 .roadmap_page{
-	margin: 30px;
-	line-height: 2rem;
+	text-align: left;
+	max-width: 80%;
+	margin: 30px auto;
+	line-height: 2.5rem;
 }
 
 .roadmap_page .list_headers{
@@ -125,55 +195,45 @@ p {
 
 .roadmap_page li{
 	color: black;
-	font-weight: bold;
-}
-@media screen and (min-width: 375px){
-	nav h1{
-		margin-left: 40px;
-	}
 }
 
-@media screen and (min-width: 425px){
-	nav h1{
-		margin-left: 65px;
-	}
-}
 @media screen and (min-width: 600px){
 
-	nav {
-		padding: 0;
+	header{
+		flex-flow: row;
+		align-items: stretch;
 	}
 
-	nav a h1 {
-		font-size: 7vw;
-		margin-left: 2.5vw;
-		align-self: center;
-	}
-
-	nav ul {
+	header a:first-child{
 		display: flex;
+	}
+	h1{
+		padding: 10px;
+	}
+
+	nav{
+		display: flex;
+	}
+
+	nav ul{
 		flex-direction: row;
-		justify-content: stretch;
-		font-size: 2vw;
-		width:50%;
-		margin: auto;
 	}
 
-	nav ul li {
-		border-left: 2px white solid;
-		border-bottom: none;
-		padding: 4vw 2vw;
-		align-self: center;
+	nav ul li a{
+		display: flex;
+		padding: 0 10px;
+		align-self: stretch;
+		align-items: center;
+		font-size: 1rem;
+		justify-content: center;
+		border: none;
 	}
 
-	.menu-trigger{
-		display: none;
-	}
 
 	h2 {
 		font-size: 3rem;
 	}
-	
+
 	.content {
 		justify-content: center;
 		margin: 5vw;
@@ -193,13 +253,7 @@ p {
 
 	.content p {
 		max-width:95%;
-		font-size: 3vw;
-	}
-
-	.content img {
-		display: flex;
-		max-width: 100%;
-
+		font-size: 1.25em;
 	}
 
 	.content h2 {
@@ -243,14 +297,16 @@ p {
 	.item {
 		width:100%
 	}
+
+	.flex_row{
+		display: flex;
+		flex-direction: row;
+	}
 }
 
 @media screen and (min-width: 1000px){
 
-	p {
-		font-size: 2vw;
-	}
 	.content{
 		grid-gap: 30px;
 	}
-	}
+}
