@@ -178,6 +178,11 @@ figcaption{
 
 /* INDEX PAGE */
 
+.hero img{
+	min-width: 40%;
+	max-width: 80%;
+}
+
 .content img {
 	display: block;
 	margin: auto;
