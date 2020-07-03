@@ -33,8 +33,6 @@ p{
 .main_img{
 	display: block;
 	max-width: 80%;
-	min-width: 300px;
-	max-height: 50%;
 	padding: 2rem 2rem;
 	align-self: center;
 }
@@ -42,7 +40,6 @@ p{
 @media screen and (min-width: 600px){
 	.main_img{
 		max-width: 600px;
-		max-height: 600px;
 	}
 }
 
