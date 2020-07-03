@@ -29,12 +29,29 @@ p{
 
 /* || UTILITIES */
 
-/* For lists without bullets */
-
+/* For the main/hero image on a webpage */
 .main_img{
 	display: block;
-	max-width: 100%;
+	max-width: 80%;
+	min-width: 300px;
+	max-height: 50%;
+	padding: 2rem 2rem;
+	align-self: center;
 }
+
+@media screen and (min-width: 600px){
+	.main_img{
+		max-width: 600px;
+		max-height: 600px;
+	}
+}
+
+/* Will highlight the current page on the navbar*/
+.current_page{
+	background: #346C82;
+}
+
+/* For lists without bullets */
 
 .no_list{
 	list-style: none;
@@ -102,10 +119,6 @@ section{
 	margin: 3rem initial;
 }
 
-section > ul{
-	list-style: inside;
-	margin-left: 25%;
-}
 h2 {
 	background-color: #254C5C;
   	font-family: 'Roboto Slab',Georgia,Helvetica serif;
@@ -113,8 +126,14 @@ h2 {
 	padding: 1.5rem 0;
 }
 
+figure{
+	display: flex;
+	flex-flow: column;
+}
+
 figcaption{
 	font-size: 2rem;
+	line-height: 2rem;
 }
 
 .hero {
@@ -150,12 +169,9 @@ figcaption{
 	margin: 0;
 }
 
-
-.hero > a:last-child{
-	max-width: 90vw;
-	max-width: 600px;
-	min-width: 250px;
-	padding: 2rem 2rem;
+.hero > a{
+	display: flex;
+	flex-flow: column;
 }
 
 /* || PAGE SPECIFIC */
@@ -197,6 +213,17 @@ figcaption{
 	color: black;
 }
 
+/* DOG PAGE */
+
+.dog_page hr{
+	height: 30px;
+	background: #254C5C;
+}
+
+.dog_page ul{
+	line-height: 2rem;
+}
+
 @media screen and (min-width: 600px){
 
 	header{
@@ -235,20 +262,9 @@ figcaption{
 	}
 
 	.content {
-		justify-content: center;
 		margin: 5vw;
-		align-content: center;
-		align-items: center;
 		display: flex;
-		display: grid;
-		grid-gap: 10px;
-		grid-template-columns: 2fr 1fr 1fr;
-		grid-template-areas:
-			"h h h"
-			"a a a"
-			"b c c"
-			"d e e"
-			"f g g";
+		flex-flow: column;
 	}
 
 	.content p {
@@ -256,36 +272,13 @@ figcaption{
 		font-size: 1.25em;
 	}
 
-	.content h2 {
-		grid-area: h;
-	}
-	.graf1 {
-		grid-area: a;
-	}
-	.img_2 {
-		grid-area: b;
-	}
-	.graf2 {
-		grid-area: c;
-	}
-	.img_3 {
-		grid-area: d;
-	}
-	.graf3 {
-		grid-area: e;
-	}
-	.img_4 {
-		grid-area: f;
-	}
-	.graf4 {
-		grid-area: g;
-	}
+	
 	figure{
-		display:flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-around;
 	}
+
 	figcaption{
 		font-size: 2.5rem;
 		line-height: 3rem;
@@ -301,12 +294,5 @@ figcaption{
 	.flex_row{
 		display: flex;
 		flex-direction: row;
-	}
-}
-
-@media screen and (min-width: 1000px){
-
-	.content{
-		grid-gap: 30px;
 	}
 }
