@@ -33,13 +33,14 @@ p{
 .main_img{
 	display: block;
 	max-width: 80%;
+	width: auto;
 	padding: 2rem 2rem;
 	align-self: center;
 }
 
 @media screen and (min-width: 600px){
 	.main_img{
-		max-width: 600px;
+		max-width: 60%;
 	}
 }
 
