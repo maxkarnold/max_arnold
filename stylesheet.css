@@ -31,16 +31,13 @@ p{
 
 /* For the main/hero image on a webpage */
 .main_img{
-	display: block;
 	max-width: 80%;
-	width: auto;
 	padding: 2rem 2rem;
-	align-self: center;
 }
 
 @media screen and (min-width: 600px){
 	.main_img{
-		max-width: 60%;
+		max-height: 100vh;
 	}
 }
 
@@ -124,16 +121,6 @@ h2 {
 	padding: 1.5rem 0;
 }
 
-figure{
-	display: flex;
-	flex-flow: column;
-}
-
-figcaption{
-	font-size: 2rem;
-	line-height: 2rem;
-}
-
 .hero {
 	display: flex;
 	flex-flow: column;
@@ -168,18 +155,12 @@ figcaption{
 }
 
 .hero > a{
-	display: flex;
-	flex-flow: column;
+	margin: auto;
 }
 
 /* || PAGE SPECIFIC */
 
 /* INDEX PAGE */
-
-.hero img{
-	min-width: 40%;
-	max-width: 80%;
-}
 
 .content img {
 	display: block;
@@ -227,6 +208,16 @@ figcaption{
 	line-height: 2rem;
 }
 
+.dog_page figure{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.dog_page figcaption{
+	font-size: 2rem;
+	line-height: 2rem;
+}
 @media screen and (min-width: 600px){
 
 	header{
@@ -276,13 +267,13 @@ figcaption{
 	}
 
 	
-	figure{
+	.dog_page figure{
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-around;
 	}
 
-	figcaption{
+	.dog_page figcaption{
 		font-size: 2.5rem;
 		line-height: 3rem;
 	}
