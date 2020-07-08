@@ -20,6 +20,7 @@ body{
 
 img{
 	border:0;
+	max-width: 100%;
 }
 
 p{
@@ -30,9 +31,7 @@ p{
 
 /* For the main/hero image on a webpage */
 .main_img{
-	max-width: 100%;
-	padding: 2rem 2rem;
-	max-height: 80vh;
+	max-height: 60vh;
 }
 
 /* Will highlight the current page on the navbar*/
@@ -133,6 +132,10 @@ h2 {
 	margin: 2rem;
 }
 
+.hero > a{
+	width: 45%;
+}
+
 .link_box a{
 	margin-bottom: 1rem;
 	color: blue;
@@ -146,10 +149,6 @@ h2 {
 
 .link_box a:last-child{
 	margin: 0;
-}
-
-.hero > a{
-	margin: auto;
 }
 
 /* || PAGE SPECIFIC */
@@ -202,9 +201,22 @@ h2 {
 	line-height: 2rem;
 }
 
+.dog_page figure{
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
 .dog_page figcaption{
 	font-size: 2rem;
 	line-height: 2rem;
+	padding: 20px;
+}
+
+.dog_page img{
+	max-height: 70vh;
+	max-width: 70vw;
 }
 @media screen and (min-width: 600px){
 
@@ -257,6 +269,7 @@ h2 {
 	
 	.dog_page figure{
 		display: flex;
+		flex-flow: row;
 		align-items: center;
 		justify-content: space-around;
 	}
