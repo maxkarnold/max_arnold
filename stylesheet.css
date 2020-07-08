@@ -20,7 +20,6 @@ body{
 
 img{
 	border:0;
-	max-width: 100%;
 }
 
 p{
@@ -31,14 +30,9 @@ p{
 
 /* For the main/hero image on a webpage */
 .main_img{
-	max-width: 80%;
+	max-width: 100%;
 	padding: 2rem 2rem;
-}
-
-@media screen and (min-width: 600px){
-	.main_img{
-		max-height: 100vh;
-	}
+	max-height: 80vh;
 }
 
 /* Will highlight the current page on the navbar*/
@@ -208,12 +202,6 @@ h2 {
 	line-height: 2rem;
 }
 
-.dog_page figure{
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-}
-
 .dog_page figcaption{
 	font-size: 2rem;
 	line-height: 2rem;
@@ -268,7 +256,7 @@ h2 {
 
 	
 	.dog_page figure{
-		flex-direction: row;
+		display: flex;
 		align-items: center;
 		justify-content: space-around;
 	}
