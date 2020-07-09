@@ -190,6 +190,15 @@ h2 {
 	color: black;
 }
 
+.roadmap_page a{
+	text-decoration: none;
+}
+
+.roadmap_page a:hover{
+	text-decoration: underline;
+
+}
+
 /* DOG PAGE */
 
 .dog_page hr{
