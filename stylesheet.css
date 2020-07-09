@@ -122,14 +122,15 @@ h2 {
 	margin-top: 2rem;
 }
 
-.hero article.link_box{
+.link_box{
 	display: flex;
 	flex-flow: column;
 	background: #FFD2B3;
 	border: 5px inset #939290;
 	border-radius: 20px;
-	padding: 2.5rem 1.5rem;
+	padding: 1rem 1rem;
 	margin: 2rem;
+	text-align: center;
 }
 
 .hero > a{
@@ -173,7 +174,7 @@ h2 {
 
 .roadmap_page{
 	text-align: left;
-	max-width: 80%;
+	max-width: 85%;
 	margin: 30px auto;
 	line-height: 2.5rem;
 }
@@ -190,6 +191,10 @@ h2 {
 	color: black;
 }
 
+.roadmap_page > ol > li li{
+	font-size: 1rem;
+}
+
 .roadmap_page a{
 	text-decoration: none;
 }
@@ -197,6 +202,21 @@ h2 {
 .roadmap_page a:hover{
 	text-decoration: underline;
 
+}
+
+.roadmap_page .link_box{
+	margin: 2rem auto;
+	max-width: 50%;
+}
+
+@media screen and (min-width:800px){
+	.roadmap_page > ol{
+		margin: 0;
+		padding: 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px 40px;
+	}
 }
 
 /* DOG PAGE */
