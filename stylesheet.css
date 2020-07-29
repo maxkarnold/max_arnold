@@ -204,9 +204,24 @@ h2 {
 
 }
 
+.roadmap_page .link_box h3{
+	font-size: 2em;
+	font-family: 'Roboto Slab',Georgia,Helvetica serif;
+	display: none;
+}
+
 .roadmap_page .link_box{
 	margin: 2rem auto;
 	max-width: 50%;
+}
+
+.roadmap_page .link_box ol{
+	text-align: left;
+	display: none;
+}
+
+.roadmap_page .link_box ul{
+	list-style: inside;
 }
 
 @media screen and (min-width:800px){
@@ -217,6 +232,11 @@ h2 {
 		grid-template-columns: 1fr 1fr;
 		gap: 20px 40px;
 	}
+
+	.roadmap_page .link_box h3,
+	.roadmap_page .link_box ol{
+		display: grid;
+	} 
 }
 
 /* DOG PAGE */
