@@ -25,7 +25,7 @@ img{
 
 p{
 	line-height: 2rem;
-}
+} 
 
 /* || UTILITIES */
 
@@ -208,11 +208,25 @@ h2 {
 	font-size: 2em;
 	font-family: 'Roboto Slab',Georgia,Helvetica serif;
 	display: none;
+	border-top: 2px dashed black;
+	border-bottom: 2px dashed black;
+	padding: 20px 0;
+	margin: 40px auto;
+	max-width: 100%;
+	width: 560px;
+}
+
+.roadmap_page .link_box h3:first-child{
+	display: grid;
 }
 
 .roadmap_page .link_box{
 	margin: 2rem auto;
-	max-width: 50%;
+}
+
+.roadmap_page iframe{
+	max-width: 100%;
+	align-self: center;
 }
 
 .roadmap_page .link_box ol{
@@ -235,7 +249,8 @@ h2 {
 
 	.roadmap_page .link_box h3,
 	.roadmap_page .link_box ol{
-		display: grid;
+		display: flex;
+		flex-flow: column;
 	} 
 }
 
