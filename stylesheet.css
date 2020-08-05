@@ -122,7 +122,7 @@ h2 {
 	margin-top: 2rem;
 }
 
-.link_box{
+article.link_box{
 	display: flex;
 	flex-flow: column;
 	background: #FFD2B3;
@@ -137,18 +137,18 @@ h2 {
 	width: 45%;
 }
 
-.link_box a{
+article.link_box a{
 	margin-bottom: 1rem;
 	color: blue;
 	text-decoration: none;
 }
 
-.link_box a:hover{
+article.link_box a:hover{
 	color: white;
 	text-decoration: underline;
 }
 
-.link_box a:last-child{
+article.link_box a:last-child{
 	margin: 0;
 }
 
@@ -204,25 +204,37 @@ h2 {
 
 }
 
+.roadmap_page .link_box{
+	margin: 0;
+	padding: 0;
+}
+
+.roadmap_page .link_box div{
+	max-width: 100%;
+	margin: 20px;
+}
+
+.roadmap_page .link_box div:nth-of-type(1){
+	display: flex;
+	flex-flow: column;
+}
+
+.roadmap_page .link_box div:nth-of-type(2){
+	display: none;
+}
+
 .roadmap_page .link_box h3{
 	font-size: 2em;
 	font-family: 'Roboto Slab',Georgia,Helvetica serif;
-	display: none;
 	border-top: 2px dashed black;
 	border-bottom: 2px dashed black;
 	padding: 20px 0;
-	margin: 40px auto;
+	margin: 30px auto;
 	max-width: 100%;
-	width: 560px;
+	width: 400px;
 }
 
-.roadmap_page .link_box h3:first-child{
-	display: grid;
-}
 
-.roadmap_page .link_box{
-	margin: 2rem auto;
-}
 
 .roadmap_page iframe{
 	max-width: 100%;
@@ -231,14 +243,26 @@ h2 {
 
 .roadmap_page .link_box ol{
 	text-align: left;
-	display: none;
 }
 
 .roadmap_page .link_box ul{
 	list-style: inside;
 }
 
+@media screen and (min-width: 600px){
+	.roadmap_page .link_box{
+		/* margin: 2rem; */
+	}
+}
+
 @media screen and (min-width:800px){
+
+	.roadmap_page .link_box{
+		flex-flow: row;
+		justify-content: center;
+		background: none;
+		border: none;
+	}
 	.roadmap_page > ol{
 		margin: 0;
 		padding: 0;
@@ -247,11 +271,29 @@ h2 {
 		gap: 20px 40px;
 	}
 
-	.roadmap_page .link_box h3,
-	.roadmap_page .link_box ol{
+	.roadmap_page .link_box div{
 		display: flex;
 		flex-flow: column;
+		background: #FFD2B3;
+		border: 5px inset #939290;
+		border-radius: 20px;
+		padding: 1rem 1rem;
+		margin: 2rem;
+		text-align: center;
+		max-width: 50%;
 	} 
+
+	.roadmap_page .link_box div:nth-of-type(1){
+		height: 50%;
+	}
+
+	.roadmap_page .link_box div:nth-of-type(2){
+		display: flex;
+	}
+
+	.roadmap_page .link_box h3{
+		width: 400px;
+	}
 }
 
 /* DOG PAGE */
