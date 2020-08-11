@@ -195,13 +195,13 @@ article.link_box a:last-child{
 	font-size: 1rem;
 }
 
-.roadmap_page a{
+.roadmap_page a, .roadmap_page a:visited{
 	text-decoration: none;
+	color: blue;
 }
 
 .roadmap_page a:hover{
 	text-decoration: underline;
-
 }
 
 .roadmap_page .link_box{
